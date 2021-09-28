@@ -4,9 +4,11 @@
              x:Class="PR10.MainPage">
 
     <StackLayout>
-        <Frame BackgroundColor="Black" Padding="24" CornerRadius="0">
-            <Label Text="Активы" HorizontalTextAlignment="Center" TextColor="White" FontSize="26"/>
+        <Frame BackgroundColor="Purple" Padding="24" CornerRadius="0">
+            <Label Text="Активы" HorizontalTextAlignment="Start" TextColor="White" FontSize="26"/>
         </Frame>
         <Button Text="TRX" Clicked="Button_Clicked_trx"></Button>
+        <Button Text="RVN" Clicked="Button_Clicked_rvn"></Button>
+        <Button Text="SOL" Clicked="Button_Clicked_sol"></Button>
     </StackLayout>
 </ContentPage>

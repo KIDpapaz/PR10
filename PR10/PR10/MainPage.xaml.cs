@@ -17,6 +17,16 @@ namespace PR10
 
         private void Button_Clicked_trx(object sender, EventArgs e)
         {
+            Page_trx ptrx = new Page_trx();
+            this.Content = ptrx.Content;
+        }
+
+        private void Button_Clicked_rvn(object sender, EventArgs e)
+        {
+
+        }
+        private void Button_Clicked_sol(object sender, EventArgs e)
+        {
 
         }
     }
