@@ -23,7 +23,8 @@ namespace PR10
 
         private void Button_Clicked_rvn(object sender, EventArgs e)
         {
-
+            Page_rvn prvn = new Page_rvn();
+            this.Content = prvn.Content;
         }
         private void Button_Clicked_sol(object sender, EventArgs e)
         {

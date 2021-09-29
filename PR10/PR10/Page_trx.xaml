@@ -6,6 +6,7 @@
      <StackLayout>
         <Label Text="Введите кол-во trx" FontSize="24"/>
         <Entry x:Name="trx_kol"  Placeholder=""/>
+        <Entry x:Name="trx_price"  Placeholder=""/>
         <Button Text="Потвердите кол-во trx" Clicked="Button_Clicked"/>
         <Label Text="" x:Name="trxAll"/>
     </StackLayout>

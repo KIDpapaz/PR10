@@ -26,5 +26,13 @@ namespace PR10
             double priceTrx = 0.08606;
             trxAll.Text = (UserTrx * priceTrx).ToString();
         }
+        private void zarab()
+        {
+            int i = (int)(trxAll);
+            if(trxAll > 100)
+            {
+
+            }
+        }
     }
 }
