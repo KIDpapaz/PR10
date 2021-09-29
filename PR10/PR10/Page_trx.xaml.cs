@@ -16,6 +16,8 @@ namespace PR10
             InitializeComponent();
         }
         static double UserTrx;
+        private object priceTrx;
+
         public void TrxUser()
         {
             UserTrx = Convert.ToDouble(trx_kol);
@@ -28,10 +30,15 @@ namespace PR10
         }
         private void zarab()
         {
-            int i = (int)(trxAll);
-            if(trxAll > 100)
+            double NewPriceTrx = 0;
+            double i = UserTrx;
+            if(i > 0)
             {
-                
+                //провести расчет и сравнить результаты юсера и в будущем
+            }
+            else
+            {
+                //вывести что у вас на счету нечего нету
             }
         }
     }
