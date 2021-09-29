@@ -31,7 +31,7 @@ namespace PR10
             int i = (int)(trxAll);
             if(trxAll > 100)
             {
-
+                
             }
         }
     }
