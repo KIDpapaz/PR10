@@ -4,9 +4,9 @@
              x:Class="PR10.Page_rvn">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Label Text="RVNcoin" VerticalOptions = "CenterAndExpand" />
+            <Entry Placeholder = "" />
+            <Image Source="trx1.png" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

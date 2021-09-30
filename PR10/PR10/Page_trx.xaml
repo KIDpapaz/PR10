@@ -4,10 +4,9 @@
              xmlns:local ="xle-namespace:PR10"
              x:Class="PR10.Page_trx">
      <StackLayout>
-        <Label Text="Введите кол-во trx" FontSize="24"/>
+        <Label Text="Введите кол-во trx" FontSize="27"/>
         <Entry x:Name="trx_kol"  Placeholder=""/>
-        <Entry x:Name="trx_price"  Placeholder=""/>
-        <Button Text="Потвердите кол-во trx" Clicked="Button_Clicked"/>
+        <Button Text="Потвердите кол-во trx" Clicked="Button_Clicked1"/>
         <Label Text="" x:Name="trxAll"/>
     </StackLayout>
 </ContentPage>

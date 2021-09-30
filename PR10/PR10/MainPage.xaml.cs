@@ -28,7 +28,7 @@ namespace PR10
         }
         private void Button_Clicked_sol(object sender, EventArgs e)
         {
-
+            
         }
     }
 }

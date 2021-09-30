@@ -16,30 +16,19 @@ namespace PR10
             InitializeComponent();
         }
         static double UserTrx;
-        private object priceTrx;
 
         public void TrxUser()
         {
             UserTrx = Convert.ToDouble(trx_kol);
         }
 
-        private void Button_Clicked(object sender, EventArgs e)
+        private void Button_Clicked1(object sender, EventArgs e)
         {
-            double priceTrx = 0.08606;
-            trxAll.Text = (UserTrx * priceTrx).ToString();
-        }
-        private void zarab()
-        {
-            double NewPriceTrx = 0;
-            double i = UserTrx;
-            if(i > 0)
-            {
-                //провести расчет и сравнить результаты юсера и в будущем
-            }
-            else
-            {
-                //вывести что у вас на счету нечего нету
-            }
+            string kkk = trx_kol.Text;
+            double priceTrx = 0.08254;
+            double g = Convert.ToDouble(kkk) * priceTrx;
+            g = Math.Round(g, 2);
+            trxAll.Text = Convert.ToString(g);
         }
     }
 }
