@@ -15,20 +15,17 @@ namespace PR10
         {
             InitializeComponent();
         }
-        static double UserTrx;
-
-        public void TrxUser()
-        {
-            UserTrx = Convert.ToDouble(trx_kol);
-        }
 
         private void Button_Clicked1(object sender, EventArgs e)
         {
             string kkk = trx_kol.Text;
             double priceTrx = 0.08254;
-            double g = Convert.ToDouble(kkk) * priceTrx;
-            g = Math.Round(g, 2);
+            double g = Math.Round(Convert.ToDouble(kkk) * priceTrx);
             trxAll.Text = Convert.ToString(g);
+        }
+        private void trx()
+        {
+            //брать курс трх с интернета
         }
     }
 }

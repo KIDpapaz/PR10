@@ -28,7 +28,8 @@ namespace PR10
         }
         private void Button_Clicked_sol(object sender, EventArgs e)
         {
-            
+            Page_sol psol = new Page_sol();
+            this.Content = psol.Content;
         }
     }
 }
