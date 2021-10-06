@@ -5,8 +5,8 @@
     <ContentPage.Content>
         <StackLayout>
             <Label Text="RVNcoin" VerticalOptions = "CenterAndExpand" />
-            <Entry Placeholder = "" />
-            <Image Source="trx1.png" />
+            <Entry x:Name = "Entry1" Placeholder = "" />
+            <Button x:Name="Button1" Text="" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

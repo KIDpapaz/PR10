@@ -15,7 +15,7 @@ namespace PR10
             InitializeComponent();
         }
 
-        private void Button_Clicked_trx(object sender, EventArgs e)
+        private void Button_Clicked_trx( object sender, EventArgs e)
         {
             Page_trx ptrx = new Page_trx();
             this.Content = ptrx.Content;
