@@ -4,9 +4,7 @@
              x:Class="PR10.Page_sol">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Label Text=""/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

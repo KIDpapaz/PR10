@@ -8,6 +8,5 @@
         <Entry x:Name="trx_kol"  Placeholder=""/>
         <Button Text="Потвердите кол-во trx" Clicked="Button_Clicked1"/>
         <Label Text="" x:Name="trxAll"/>
-        <Label Text="" x:Name="CurrencyTRX"/>
     </StackLayout>
 </ContentPage>

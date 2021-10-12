@@ -6,7 +6,7 @@
         <StackLayout>
             <Label Text="RVNcoin" VerticalOptions = "CenterAndExpand" />
             <Entry x:Name = "Entry1" Placeholder = "" />
-            <Button x:Name="Button1" Text="" />
+            <Label x:Name="Label1" Text="" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -5,6 +5,12 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using System.Text.Json;
+using System.IO;
+using System.Text.Json.Serialization;
+using System.Net.Http;
+using System.Net;
+
 namespace PR10
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
@@ -14,32 +20,38 @@ namespace PR10
         {
             InitializeComponent();
         }
-
-        private void coinmarketcap()
-        {
-            //System.Net.WebClient wc = new System.Net.WebClient();
-            //String Response = wc.DownloadString("https://coinmarketcap.com/currencies/tron/");
-            //String Rate = System.Text.RegularExpressions.Regex.Match(Response,).Groups[1].Value;
-            //trxAll.Text = Rate;
-        } 
-
+        static double x;
         private void Button_Clicked1(object sender, EventArgs e)
         {
-            coinmarketcap();
-            p2p();
+            string t;
+            t = trx_kol.Text;
+            double g = x * Convert.ToDouble(t);
+            trxAll.Text = Convert.ToString(g);
         }
-        private void p2p()
+        static string Url = "https://api.cryptowat.ch/markets/okex/trxusdt/price";
+        public static async void Trxpr(string[] args)
         {
-            int p2p = 20; //сколько у него (пользователя) денег
-            int i = p2p;
-            if (i > 0 )
-            {
-                //расчет колво актива
-            }
-            else
-            {
-                //вывод что у вас нету монет
-            }
+            HttpClient httpClient = new HttpClient();
+            HttpResponseMessage response = (await httpClient.GetAsync(Url)).EnsureSuccessStatusCode();
+            string responseBody = await response.Content.ReadAsStringAsync();
+            x = double.Parse(await Get());
+        }
+        static JsonSerializerOptions options = new JsonSerializerOptions
+        {
+            PropertyNameCaseInsensitive = true,
+        };
+        // настройка клиента
+        private static HttpClient GetClient()
+        {
+            HttpClient client = new HttpClient();
+            client.DefaultRequestHeaders.Add("Accept", "application/json");
+            return client;
+        }
+        public static async Task<string> Get()
+        {
+            HttpClient client = GetClient();
+            string result = await client.GetStringAsync(Url);
+            return result;
         }
     }
 }

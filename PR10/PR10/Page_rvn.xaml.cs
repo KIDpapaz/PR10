@@ -11,20 +11,17 @@ namespace PR10
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Page_rvn : ContentPage
     {
-        double currency;
         public Page_rvn()
         {
             InitializeComponent();
         }
-        private void cur()//берём информацию с сайта
+        private void Cur() //берём информацию с сайта там где трх
         {
-            currency = 50;
+
         }
         private void Button1()
         {
-            cur();
-            double rvn = 50; //замена строчки на её ввод, пока это 50 rvn'ов
-            double RvnAll = rvn * currency;
+
         }
     }
 }
